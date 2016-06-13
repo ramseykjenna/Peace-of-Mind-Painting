@@ -1,9 +1,10 @@
-# pomp
+# Peace of Mind Painting
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 1.0.0.
+Website for client: Peace of Mind Painting.
 
 ## Build & development
+
+Run `npm install` and `bower install` to install dependencies.
 
 Run `grunt` for building and `grunt serve` for preview.
 
