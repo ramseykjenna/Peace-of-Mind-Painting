@@ -10,6 +10,10 @@
 angular.module('pompApp')
     .controller('WorkCtrl', function ($scope) {
         $(document).ready(function () {
-            $('.carousel').carousel({padding: 50});
+            $('.carousel').carousel({
+                padding: 50
+            });
+            $('.materialboxed').materialbox();
         });
+
     });
