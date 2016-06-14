@@ -1,0 +1,10 @@
+.container {
+    div.s3.photo {
+
+        img {
+            width: 30%;
+            height: 15em;
+            @include inline;
+        }
+    }
+}

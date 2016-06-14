@@ -6,6 +6,22 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -14,13 +30,6 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
 </head>
 
@@ -31,35 +40,61 @@
 
     <!-- Add your site or application content here -->
     <div class="header" ng-cloak="">
-        <nav>
+        <nav ng-controller="NavCtrl">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#!" class="brand-logo">POMP</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="#/work">Work</a></li>
+                    <li><a href="#/services">Services</a></li>
+                    <li><a href="#/testimonials">Testimonials</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="#/work">Work</a></li>
+                    <li><a href="#/services">Services</a></li>
+                    <li><a href="#/testimonials">Testimonials</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <div class="container">
+    <div>
         <div ng-view=""></div>
     </div>
 
-    <div class="footer">
+
+    <footer class="page-footer">
         <div class="container">
-            <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team and Firebase</p>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect with us!</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/PeaceofMindPaint/">
+                                <i class="ion-social-facebook" </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="https://www.instagram.com/peaceofmindpainting/">
+                                <i class="ion-social-instagram-outline"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Peace of Mind Painting
+                <a class="grey-text text-lighten-4 right" href="#!">Built by Efflorescent</a>
+            </div>
+        </div>
+    </footer>
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -102,6 +137,10 @@
     <script src="scripts/directives/ngShowAuth.js"></script>
     <script src="scripts/directives/ngHideAuth.js"></script>
     <script src="scripts/routes.js"></script>
+    <script src="scripts/controllers/nav.js"></script>
+    <script src="scripts/controllers/work.js"></script>
+    <script src="scripts/controllers/testimonials.js"></script>
+    <script src="scripts/controllers/services.js"></script>
     <!-- endbuild -->
 </body>
 

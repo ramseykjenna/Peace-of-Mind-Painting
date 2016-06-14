@@ -74,6 +74,18 @@ angular.module('pompApp')
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl'
+      })
+      .when('/testimonials', {
+        templateUrl: 'views/testimonials.html',
+        controller: 'TestimonialsCtrl'
+      })
+      .when('/services', {
+        templateUrl: 'views/services.html',
+        controller: 'ServicesCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 
