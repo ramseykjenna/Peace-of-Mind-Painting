@@ -85,8 +85,8 @@ angular.module('pompApp')
       .when('/services', {
         templateUrl: 'views/services.html',
         controller: 'ServicesCtrl'
-      })
-      .otherwise({redirectTo: '/'});
+      });
+//      .otherwise({redirectTo: '/'});
   }])
 
   /**

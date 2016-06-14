@@ -1,9 +1,17 @@
-.container div.s3.photo img {
-  width: 30%;
-  height: 15em;
-  position: relative;
-  display: inline-block;
-  float: left; }
+.work {
+  text-align: center;
+  padding: 2em 0; }
+  .work .carousel {
+    height: 60vh; }
+  .work .gallery-heading h1 {
+    font-size: 1.5em;
+    color: #3D5946;
+    margin: 0; }
+  .work .gallery-heading p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: #A6A5A1; }
 
 nav {
   padding-left: 5%;

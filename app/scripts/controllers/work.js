@@ -8,10 +8,8 @@
  * Controller of the pompApp
  */
 angular.module('pompApp')
-  .controller('WorkCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('WorkCtrl', function ($scope) {
+        $(document).ready(function () {
+            $('.carousel').carousel({padding: 50});
+        });
+    });
