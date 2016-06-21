@@ -1,15 +1,14 @@
 .testimonials {
     .container {
-        .card.large {
-            .card-image.waves-effect.waves-block.waves-light {
-                .img {
-                    position: relative;
-                    float: left;
-                    width: 100px;
-                    height: 100px;
-                    background-position: 50% 50%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+        .row {
+            .col.s6 {
+                img {
+                    height: 20%;
+                    width: 100%;
+                    border: 3px solid $accent2;
+                }
+                h4 {
+                    color: $primary;
                 }
             }
         }

@@ -2,6 +2,7 @@
 @import "variables";
 @import "work";
 @import "testimonials";
+@import "services";
 nav {
     padding-left: 5%;
     padding-right: 5%;
@@ -18,6 +19,7 @@ nav {
 
 .container.bio {
     text-align: center;
+    padding: 2em 0;
     h1 {
         color: $primary;
     }
@@ -28,6 +30,7 @@ nav {
 
 .container {
     margin-top: 2em;
+    padding: 2em 0;
     .row {
         .col.s4 {
             position: relative;
@@ -58,6 +61,12 @@ footer.page-footer {
     background-color: $primary;
     .prefix {
         color: white;
+    }
+    .prefix.active {
+        color: $accent2;
+    }
+    .input {
+        border-bottom: 1px solid white;
     }
 
     .submit {

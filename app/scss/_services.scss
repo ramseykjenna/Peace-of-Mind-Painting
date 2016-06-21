@@ -1,0 +1,19 @@
+.services {
+    .container {
+        .row {
+            .col.s6 {
+                h3 {
+                    color: $primary;
+                }
+                h5 {
+                    color: $secondary;
+                }
+                li {
+                    color: $accent2;
+                    font-size: 1.25em;
+                    padding: .5em;
+                }
+            }
+        }
+    }
+}
