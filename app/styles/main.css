@@ -27,17 +27,15 @@ nav {
   padding-right: 5%;
   background-color: #3D5946; }
 
-.banner {
-  width: 100%;
-  height: 95vh;
-  background-image: url("/images/exterior-paint-door.jpeg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center; }
+.slider .indicators .indicator-item.active {
+  background-color: #67809F; }
 
 .container.bio {
   text-align: center; }
+  .container.bio h1 {
+    color: #3D5946; }
+  .container.bio p {
+    color: #A6A5A1; }
 
 .container {
   margin-top: 2em; }
@@ -45,17 +43,28 @@ nav {
     position: relative;
     text-align: center; }
     .container .row .col.s4 i {
-      font-size: 4em; }
+      font-size: 4em;
+      color: #67809F; }
     .container .row .col.s4 h1 {
       font-size: 2em;
-      margin-top: .5em; }
-
-.container.crew .row {
-  display: inline-block; }
+      margin-top: .5em;
+      color: #3D5946; }
+    .container .row .col.s4 p {
+      color: #A6A5A1; }
 
 footer.page-footer {
   background-color: #3D5946; }
-  footer.page-footer .container .row .col.l4.offset-l2.s12 ul li i {
+  footer.page-footer .prefix {
+    color: white; }
+  footer.page-footer .submit {
+    background-color: #3D5946;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  footer.page-footer .container i {
     font-size: 2em;
     display: inline-block; }
   footer.page-footer .footer-copyright {
