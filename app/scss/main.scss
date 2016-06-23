@@ -10,6 +10,10 @@ nav {
 }
 
 .slider {
+    height: 70vh !important;
+    .slides {
+        height: 60vh !important;
+    }
     .indicators {
         .indicator-item.active {
             background-color: $accent2;
@@ -25,6 +29,9 @@ nav {
     }
     p {
         color: $secondary;
+    }
+    .call {
+        color: $accent2;
     }
 }
 
@@ -57,7 +64,9 @@ nav {
     }
 }
 
-footer.page-footer {
+footer {
+    width: 100%;
+    height: auto;
     background-color: $primary;
     .prefix {
         color: white;
@@ -68,7 +77,6 @@ footer.page-footer {
     .input {
         border-bottom: 1px solid white;
     }
-
     .submit {
         background-color: $primary;
         border: 1px solid white;
@@ -76,13 +84,12 @@ footer.page-footer {
         width: 50%;
         @include h-center;
     }
-    .container {
-        i {
-            font-size: 2em;
-            display: inline-block;
-        }
+    i {
+        font-size: 2em;
+        display: inline-block;
     }
-    .footer-copyright {
-        overflow: visible;
+    .copyright {
+        width: 100%;
+        padding: 0 1em;
     }
 }

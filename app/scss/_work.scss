@@ -2,22 +2,89 @@
 .work {
     text-align: center;
     padding: 2em 0;
-    .carousel {
-        height: 60vh;
-        .carousel-item {
-        }
+    h2 {
+        color: $primary;
+        margin-bottom: .5em;
     }
-    .gallery-heading {
-        h1 {
-            font-size: 1.5em;
-            color: $primary;
-            margin: 0;
-        }
-        p {
-            width: 50%;
-            margin: 0 auto;
-            font-size: 1em;
-            color: $secondary;
-        }
+    .outdoor {
+        color: $primary;
+        margin-top: 4em;
+        margin-bottom: .5em;
+    }
+    .row {
+        margin-bottom: 0;
+    }
+    .col {
+        margin-bottom: .5em;
+        border-left: .3em solid white;
+        border-right: .3em solid white;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .tall {
+        height: 80vh;
+    }
+    .short {
+        height: 40vh;
+    }
+    .wide {
+        height: 70vh;
+    }
+    #interior-1 {
+        background-image: url(/images/interior-1.jpg)
+    }
+    #interior-2 {
+        background-image: url(/images/interior-2.jpg)
+    }
+    #interior-3 {
+        background-image: url(/images/interior-3.jpg)
+    }
+    #interior-4 {
+        background-image: url(/images/interior-4.jpg)
+    }
+    #remodel-1 {
+        background-image: url(/images/remodel-1.jpg)
+    }
+    #remodel-2 {
+        background-image: url(/images/remodel-2.jpg)
+    }
+    #fireplace-1 {
+        background-image: url(/images/fireplace-1.jpg)
+    }
+    #fireplace-2 {
+        background-image: url(/images/fireplace-2.jpg)
+    }
+    #newconstruction-1 {
+        background-image: url(/images/newconstruction-1.jpg)
+    }
+    #newconstruction-2 {
+        background-image: url(/images/newconstruction-2.jpg)
+    }
+    #exterior-1 {
+        background-image: url(/images/exterior-1.jpg)
+    }
+      #exterior-3 {
+        background-image: url(/images/exterior-3.jpg)
+    }
+      #fence-1 {
+        background-image: url(/images/fence-1.jpg)
+    }
+      #fence-2 {
+        background-image: url(/images/fence-2.jpg)
+    }
+      #exterior-2 {
+        background-image: url(/images/exterior-2.jpg)
+    }
+      #exterior-4 {
+        background-image: url(/images/exterior-4.jpg)
+    }
+      #fence-3 {
+        background-image: url(/images/fence-3.jpg)
+    }
+      #fence-4 {
+        background-image: url(/images/fence-4.jpg)
     }
 }
+
+

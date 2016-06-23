@@ -1,17 +1,64 @@
 .work {
   text-align: center;
   padding: 2em 0; }
-  .work .carousel {
-    height: 60vh; }
-  .work .gallery-heading h1 {
-    font-size: 1.5em;
+  .work h2 {
     color: #3D5946;
-    margin: 0; }
-  .work .gallery-heading p {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 1em;
-    color: #A6A5A1; }
+    margin-bottom: .5em; }
+  .work .outdoor {
+    color: #3D5946;
+    margin-top: 4em;
+    margin-bottom: .5em; }
+  .work .row {
+    margin-bottom: 0; }
+  .work .col {
+    margin-bottom: .5em;
+    border-left: .3em solid white;
+    border-right: .3em solid white;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .work .tall {
+    height: 80vh; }
+  .work .short {
+    height: 40vh; }
+  .work .wide {
+    height: 70vh; }
+  .work #interior-1 {
+    background-image: url(/images/interior-1.jpg); }
+  .work #interior-2 {
+    background-image: url(/images/interior-2.jpg); }
+  .work #interior-3 {
+    background-image: url(/images/interior-3.jpg); }
+  .work #interior-4 {
+    background-image: url(/images/interior-4.jpg); }
+  .work #remodel-1 {
+    background-image: url(/images/remodel-1.jpg); }
+  .work #remodel-2 {
+    background-image: url(/images/remodel-2.jpg); }
+  .work #fireplace-1 {
+    background-image: url(/images/fireplace-1.jpg); }
+  .work #fireplace-2 {
+    background-image: url(/images/fireplace-2.jpg); }
+  .work #newconstruction-1 {
+    background-image: url(/images/newconstruction-1.jpg); }
+  .work #newconstruction-2 {
+    background-image: url(/images/newconstruction-2.jpg); }
+  .work #exterior-1 {
+    background-image: url(/images/exterior-1.jpg); }
+  .work #exterior-3 {
+    background-image: url(/images/exterior-3.jpg); }
+  .work #fence-1 {
+    background-image: url(/images/fence-1.jpg); }
+  .work #fence-2 {
+    background-image: url(/images/fence-2.jpg); }
+  .work #exterior-2 {
+    background-image: url(/images/exterior-2.jpg); }
+  .work #exterior-4 {
+    background-image: url(/images/exterior-4.jpg); }
+  .work #fence-3 {
+    background-image: url(/images/fence-3.jpg); }
+  .work #fence-4 {
+    background-image: url(/images/fence-4.jpg); }
 
 .testimonials .container .row .col.s6 img {
   height: 20%;
@@ -19,6 +66,8 @@
   border: 3px solid #67809F; }
 .testimonials .container .row .col.s6 h4 {
   color: #3D5946; }
+.testimonials .container .row .col.s6 p {
+  color: #A6A5A1; }
 
 .services .container .row .col.s6 h3 {
   color: #3D5946; }
@@ -34,8 +83,12 @@ nav {
   padding-right: 5%;
   background-color: #3D5946; }
 
-.slider .indicators .indicator-item.active {
-  background-color: #67809F; }
+.slider {
+  height: 70vh !important; }
+  .slider .slides {
+    height: 60vh !important; }
+  .slider .indicators .indicator-item.active {
+    background-color: #67809F; }
 
 .container.bio {
   text-align: center;
@@ -44,6 +97,8 @@ nav {
     color: #3D5946; }
   .container.bio p {
     color: #A6A5A1; }
+  .container.bio .call {
+    color: #67809F; }
 
 .container {
   margin-top: 2em;
@@ -61,15 +116,17 @@ nav {
     .container .row .col.s4 p {
       color: #A6A5A1; }
 
-footer.page-footer {
+footer {
+  width: 100%;
+  height: auto;
   background-color: #3D5946; }
-  footer.page-footer .prefix {
+  footer .prefix {
     color: white; }
-  footer.page-footer .prefix.active {
+  footer .prefix.active {
     color: #67809F; }
-  footer.page-footer .input {
+  footer .input {
     border-bottom: 1px solid white; }
-  footer.page-footer .submit {
+  footer .submit {
     background-color: #3D5946;
     border: 1px solid white;
     color: white;
@@ -77,10 +134,11 @@ footer.page-footer {
     position: relative;
     left: 50%;
     transform: translateX(-50%); }
-  footer.page-footer .container i {
+  footer i {
     font-size: 2em;
     display: inline-block; }
-  footer.page-footer .footer-copyright {
-    overflow: visible; }
+  footer .copyright {
+    width: 100%;
+    padding: 0 1em; }
 
 /*# sourceMappingURL=main.css.map */
