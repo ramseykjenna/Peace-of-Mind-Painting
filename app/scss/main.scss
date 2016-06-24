@@ -26,6 +26,15 @@ body {
     height: 60vh;
     z-index: 998;
 }
+.brand-logo {
+    position: relative;
+    img {
+        width: 1.5em;
+        height: 1.5em;
+        @include h-center;
+        margin-top: .25em;
+    }
+}
 
 .contain {
     width: 100%;
@@ -76,8 +85,12 @@ body {
     h1 {
         color: $primary;
     }
+    h4 {
+        color: $accent2;
+    }
     p {
         color: $secondary;
+        font-size: 1.2em;
     }
     .call {
         color: $accent2;

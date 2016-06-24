@@ -116,6 +116,16 @@ body {
   height: 60vh;
   z-index: 998; }
 
+.brand-logo {
+  position: relative; }
+  .brand-logo img {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: .25em; }
+
 .contain {
   width: 100%;
   height: 100vh;
@@ -155,8 +165,11 @@ body {
   padding: 2em 0; }
   .container.bio h1 {
     color: #3D5946; }
+  .container.bio h4 {
+    color: #67809F; }
   .container.bio p {
-    color: #A6A5A1; }
+    color: #A6A5A1;
+    font-size: 1.2em; }
   .container.bio .call {
     color: #67809F; }
 
