@@ -101,10 +101,21 @@ nav {
   padding-right: 5%;
   background-color: #3D5946; }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  z-index: 998; }
+
 .slider {
   height: 70vh !important; }
   .slider .slides {
     height: 60vh !important; }
+    .slider .slides h3 {
+      z-index: 999 !important; }
+    .slider .slides h5 {
+      z-index: 999 !important; }
   .slider .indicators .indicator-item.active {
     background-color: #67809F; }
 
