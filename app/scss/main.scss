@@ -9,6 +9,16 @@ nav {
     background-color: $primary;
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, .5);
     position: absolute;
@@ -17,8 +27,33 @@ nav {
     z-index: 998;
 }
 
+.contain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .content {
+        height: auto;
+        width: auto;
+        text-align: center;
+        @include centerer;
+        i {
+            font-size: 3em;
+           color: $secondary;
+        }
+        h1 {
+           font-size: 1.5em;
+            color: $primary;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.1em;
+            color: $secondary;
+        }
+    }
+}
+
 .slider {
-    height: 70vh !important;
+    height: 65vh !important;
     .slides {
         height: 60vh !important;
         h3 {
@@ -86,14 +121,26 @@ footer {
     width: 100%;
     height: auto;
     background-color: $primary;
+    input:focus {
+        border-bottom: 1px solid white !important;
+    }
+    textarea:focus {
+         border-bottom: 1px solid white !important;
+    }
+    .active {
+        color: white !important;
+    }
     .prefix {
         color: white;
     }
     .prefix.active {
         color: $accent2;
     }
-    .input {
-        border-bottom: 1px solid white;
+    input {
+        color: white;
+    }
+    textarea {
+        color: white;
     }
     .submit {
         background-color: $primary;
@@ -102,13 +149,37 @@ footer {
         width: 50%;
         @include h-center;
     }
+    .submit:hover {
+        background-color: white;
+        color: $primary;
+    }
     i {
         font-size: 2em;
         display: inline-block;
     }
-    .copyright {
+    .connect {
+        ul {
+            height: 100%;
+        }
+        .info {
+            color: white;
+            font-size: 1.1em;
+            white-space: nowrap;
+        }
+        li {
+            @include inline;
+            margin: 1em;
+            i {
+                font-size: 4em;
+            }
+        }
+    }
+    .footer-copyright {
         width: 100%;
         padding: 0 1em;
+        color: white;
+        margin-top: 3em;
+        text-align: center;
     }
 }
 
