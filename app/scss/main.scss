@@ -38,29 +38,33 @@ nav {
 .container {
     margin-top: 2em;
     padding: 2em 0;
-    .row {
-        .col.s4 {
-            position: relative;
-            text-align: center;
-            i {
-                font-size: 4em;
-                color: $accent2;
-            }
-            h1 {
-                font-size: 2em;
-                margin-top: .5em;
-                color: $primary;
-            }
-            p {
-                color: $secondary;
-            }
+    .skill {
+        position: relative;
+        text-align: center;
+        i {
+            font-size: 4em;
+            color: $accent2;
+        }
+        h1 {
+            font-size: 2em;
+            margin-top: .5em;
+            color: $primary;
+        }
+        p {
+            color: $secondary;
         }
     }
 }
 
 .container.crew {
     .card {
-        .card-content {}
+        height: auto;
+        .card-image {
+            height: 20em;
+        }
+        .card-content {
+            height: 17em;
+        }
     }
 }
 
@@ -91,5 +95,13 @@ footer {
     .copyright {
         width: 100%;
         padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .crew {
+        .card-content {
+            height: auto !important;
+        }
     }
 }

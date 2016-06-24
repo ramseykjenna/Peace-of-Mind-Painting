@@ -60,23 +60,41 @@
   .work #fence-4 {
     background-image: url(/images/fence-4.jpg); }
 
-.testimonials .container .row .col.s6 img {
-  height: 20%;
-  width: 100%;
-  border: 3px solid #67809F; }
-.testimonials .container .row .col.s6 h4 {
-  color: #3D5946; }
-.testimonials .container .row .col.s6 p {
-  color: #A6A5A1; }
+.testimonials .container {
+  margin-top: 0;
+  padding-top: 0; }
+.testimonials .praise {
+  margin-top: 4em; }
+  .testimonials .praise .image img {
+    height: 20%;
+    width: 100%;
+    border: 3px solid #67809F;
+    margin-bottom: 1em; }
+  .testimonials .praise .detail h4 {
+    margin-top: 0;
+    color: #3D5946; }
+  .testimonials .praise .detail p {
+    color: #A6A5A1; }
 
-.services .container .row .col.s6 h3 {
+.services .info h3 {
   color: #3D5946; }
-.services .container .row .col.s6 h5 {
+.services .info h5 {
   color: #A6A5A1; }
-.services .container .row .col.s6 li {
+.services .info li {
   color: #67809F;
   font-size: 1.25em;
   padding: .5em; }
+.services .roller-container {
+  position: relative; }
+  .services .roller-container .roller {
+    width: auto;
+    margin-top: 3em; }
+    .services .roller-container .roller svg {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+      .services .roller-container .roller svg path {
+        fill: #67809F; }
 
 nav {
   padding-left: 5%;
@@ -103,18 +121,25 @@ nav {
 .container {
   margin-top: 2em;
   padding: 2em 0; }
-  .container .row .col.s4 {
+  .container .skill {
     position: relative;
     text-align: center; }
-    .container .row .col.s4 i {
+    .container .skill i {
       font-size: 4em;
       color: #67809F; }
-    .container .row .col.s4 h1 {
+    .container .skill h1 {
       font-size: 2em;
       margin-top: .5em;
       color: #3D5946; }
-    .container .row .col.s4 p {
+    .container .skill p {
       color: #A6A5A1; }
+
+.container.crew .card {
+  height: auto; }
+  .container.crew .card .card-image {
+    height: 20em; }
+  .container.crew .card .card-content {
+    height: 17em; }
 
 footer {
   width: 100%;
@@ -140,5 +165,9 @@ footer {
   footer .copyright {
     width: 100%;
     padding: 0 1em; }
+
+@media only screen and (max-width: 993px) {
+  .crew .card-content {
+    height: auto !important; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,17 +1,27 @@
 .services {
-    .container {
-        .row {
-            .col.s6 {
-                h3 {
-                    color: $primary;
-                }
-                h5 {
-                    color: $secondary;
-                }
-                li {
-                    color: $accent2;
-                    font-size: 1.25em;
-                    padding: .5em;
+    .info {
+
+        h3 {
+            color: $primary;
+        }
+        h5 {
+            color: $secondary;
+        }
+        li {
+            color: $accent2;
+            font-size: 1.25em;
+            padding: .5em;
+        }
+    }
+    .roller-container {
+        position: relative;
+        .roller {
+            width: auto;
+            margin-top: 3em;
+            svg {
+                 @include h-center;
+                path {
+                    fill: $accent2;
                 }
             }
         }
