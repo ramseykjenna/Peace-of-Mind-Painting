@@ -8,17 +8,17 @@
  * Controller of the pompApp
  */
 angular.module('pompApp')
-  .controller('NavCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    .controller('NavCtrl', function ($scope) {
 
-     // Jquery for main page
-    $( document ).ready(function(){
-        console.log('worked');
-      $(".button-collapse").sideNav();
+
+        // Jquery for main page
+        $(document).ready(function () {
+            console.log('worked');
+
+            $('.button-collapse').sideNav({
+                closeOnClick: true
+            });
+
+
+        });
     });
-
-  });
