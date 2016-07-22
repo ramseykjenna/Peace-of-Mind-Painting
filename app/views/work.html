@@ -1,168 +1,51 @@
 <!-- Work Page -->
 <div class="work container">
 
-    <!--------------- Interior Collage --------------->
-
-    <h2>Interior Gallery</h2>
-    <!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="interior-1"></div>
-        <div class="col s12 m6 tall" id="interior-2"></div>
+   <!-- Only shown while editing -->
+    <div ng-if="editing">
+        <label for="">path</label>
+        <input type="text" name="" id="" ng-model="new.photoPath">
+        <button ng-click="submitNew()">Submit</button>
+        <button ng-click="save()">Save</button>
+        <ul>
+            <li ng-repeat="photo in photosArray">
+                <input type="text" ng-model="photo.photoPath">
+            </li>
+        </ul>
     </div>
 
-    <!-- Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="remodel-1"></div>
-        <div class="col s12 m6 short" id="remodel-2"></div>
+   <h2>Interior</h2>
+
+    <!-- Interior Grid dont touch -->
+    <div gridster="gridsterOpts">
+        <ul>
+            <li gridster-item="photo" ng-repeat="photo in photosArray" class="card">
+                <img class="materialboxed photo" ng-src="{{photo.photoPath}}">
+            </li>
+        </ul>
     </div>
 
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="newconstruction-1"></div>
+    <h2>Exterior</h2>
+
+    <!-- Only shown while editing -->
+    <div ng-if="editing">
+        <h1>Break</h1>
+        <input type="text" name="" id="" ng-model="new.photoPath">
+        <button ng-click="submitNewExt()">Submit</button>
+        <button ng-click="saveExt()">Save Ext</button>
+        <ul>
+            <li ng-repeat="photo in photosExtArray">
+                <input type="text" ng-model="photo.photoPath">
+            </li>
+        </ul>
     </div>
 
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="newconstruction-2"></div>
+    <!-- Exterior Grid dont touch -->
+    <div gridster="gridsterOpts">
+        <ul>
+            <li gridster-item="photo" ng-repeat="photo in photosExtArray" class="card">
+                <img class="materialboxed photo" ng-src="{{photo.photoPath}}">
+            </li>
+        </ul>
     </div>
-
-    <!-- Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="fireplace-1"></div>
-        <div class="col s12 m6 short" id="fireplace-2"></div>
-    </div>
-
-    <!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="interior-3"></div>
-        <div class="col s12 m6 tall" id="interior-4"></div>
-    </div>
-
-
-
-
-    <!-- Tall -->
-     <div class="row">
-        <div class="col s12 m6 tall" id="interior-6"></div>
-        <div class="col s12 m6 tall" id="interior-7"></div>
-    </div>
-
-    <!-- Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="interior-8"></div>
-        <div class="col s12 m6 short" id="interior-9"></div>
-    </div>
-
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="interior-5"></div>
-    </div>
-
-
-
-    <!-- Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="interior-10"></div>
-        <div class="col s12 m6 short" id="interior-11"></div>
-    </div>
-
-    <!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="interior-12"></div>
-        <div class="col s12 m6 tall" id="interior-13"></div>
-    </div>
-    <!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="interior-14"></div>
-        <div class="col s12 m6 tall" id="interior-15"></div>
-    </div>
-
-       <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="interior-16"></div>
-    </div>
-
-     <!-- Tall -->
-      <div class="row">
-        <div class="col s12 m6 tall" id="rail-before1"></div>
-        <div class="col s12 m6 tall" id="rail-before2"></div>
-    </div>
-
-      <div class="row">
-        <div class="col s12 m6 tall" id="rail-before3"></div>
-        <div class="col s12 m6 tall" id="rail-after"></div>
-    </div>
-
-
-
-
-
-    <!--------------- Outdoor Collage --------------->
-
-    <h2 class="outdoor">Exterior Gallery</h2>
-    <!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="exterior-1"></div>
-        <div class="col s12 m6 tall" id="exterior-3"></div>
-    </div>
-
-<!--     Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="fence-1"></div>
-        <div class="col s12 m6 short" id="fence-2"></div>
-    </div>
-
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="exterior-2"></div>
-    </div>
-
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="exterior-4"></div>
-    </div>
-
-    <!-- Split Short -->
-    <div class="row">
-        <div class="col s12 m6 short" id="fence-3"></div>
-        <div class="col s12 m6 short" id="fence-4"></div>
-    </div>
-
-
-
-
-<!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="exterior-5"></div>
-        <div class="col s12 m6 tall" id="exterior-6"></div>
-    </div>
-
-    <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="exterior-7"></div>
-    </div>
-
-<!-- Tall -->
-    <div class="row">
-        <div class="col s12 m6 tall" id="pool-before"></div>
-        <div class="col s12 m6 tall" id="pool-after1"></div>
-    </div>
-
-    <div class="row">
-        <div class="col s12 m6 tall" id="pool-after2"></div>
-        <div class="col s12 m6 tall" id="pool-after3"></div>
-    </div>
-
-      <!-- Wide -->
-    <div class="row">
-        <div class="col s12 wide" id="black-door-beforeandafter"></div>
-    </div>
-
-    <div class="row">
-        <div class="col s12 wide" id="red-door-beforeandafter"></div>
-    </div>
-
-
-
-
 </div>

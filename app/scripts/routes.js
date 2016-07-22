@@ -89,6 +89,10 @@ angular.module('pompApp')
         .when('/thanks', {
             templateUrl: 'views/thanks.html',
             controller: 'ThanksCtrl'
+        })
+        .when('/dash', {
+            templateUrl: 'views/dash.html',
+            controller: 'DashCtrl'
         });
     //      .otherwise({redirectTo: '/'});
   }])

@@ -1,5 +1,9 @@
 // Work Page stylesheet
+.gridster-item {
+    z-index: auto;
+}
 .work {
+    min-height: 100vh;
     text-align: center;
     padding: 2em 0;
     h2 {
@@ -31,6 +35,24 @@
     .wide {
         height: 70vh;
 
+    }
+    .card {
+        overflow: hidden;
+    }
+    .card:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+//    .photo-contain {
+//       overflow: hidden;
+//        img {
+//            height: 100%;
+//            width: auto;
+//        }
+//    }
+    .photo {
+        width: 100%;
+        height: auto;
     }
     #interior-1 {
         background-image: url(/images/interior-1.jpg)

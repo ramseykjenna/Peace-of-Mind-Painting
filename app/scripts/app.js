@@ -17,5 +17,6 @@ angular.module('pompApp', [
     'ngTouch',
     'firebase',
     'firebase.ref',
-    'firebase.auth'
+    'firebase.auth',
+    'gridster'
   ]);

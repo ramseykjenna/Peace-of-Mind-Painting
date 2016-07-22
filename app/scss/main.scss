@@ -3,6 +3,7 @@
 @import "work";
 @import "testimonials";
 @import "services";
+@import "dash";
 nav {
     padding-left: 5%;
     padding-right: 5%;
@@ -77,6 +78,12 @@ body {
             background-color: $accent2;
         }
     }
+}
+
+.shit {
+    width: 50%;
+    height: auto;
+    @include h-center;
 }
 
 .container.bio {

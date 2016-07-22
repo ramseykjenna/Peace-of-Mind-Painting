@@ -1,4 +1,8 @@
+.gridster-item {
+  z-index: auto; }
+
 .work {
+  min-height: 100vh;
   text-align: center;
   padding: 2em 0; }
   .work h2 {
@@ -23,6 +27,13 @@
     height: 40vh; }
   .work .wide {
     height: 70vh; }
+  .work .card {
+    overflow: hidden; }
+  .work .card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .work .photo {
+    width: 100%;
+    height: auto; }
   .work #interior-1 {
     background-image: url(/images/interior-1.jpg); }
   .work #interior-2 {
@@ -89,6 +100,26 @@
     background-image: url(/images/fence-3.jpg); }
   .work #fence-4 {
     background-image: url(/images/fence-4.jpg); }
+  .work #rail-before1 {
+    background-image: url(/images/rail-before1.jpg); }
+  .work #rail-before2 {
+    background-image: url(/images/rail-before2.jpg); }
+  .work #rail-before3 {
+    background-image: url(/images/rail-before3.jpg); }
+  .work #rail-after {
+    background-image: url(/images/rail-after.jpg); }
+  .work #pool-before {
+    background-image: url(/images/pool-before.jpg); }
+  .work #pool-after1 {
+    background-image: url(/images/pool-after1.jpg); }
+  .work #pool-after2 {
+    background-image: url(/images/pool-after2.jpg); }
+  .work #pool-after3 {
+    background-image: url(/images/pool-after3.jpg); }
+  .work #black-door-beforeandafter {
+    background-image: url(/images/black-door-beforeandafter.jpg); }
+  .work #red-door-beforeandafter {
+    background-image: url(/images/red-door-beforeandafter.jpg); }
 
 .testimonials .container {
   margin-top: 0;
@@ -125,6 +156,11 @@
       transform: translateX(-50%); }
       .services .roller-container .roller svg path {
         fill: #67809F; }
+
+.dash .collection .badge {
+  right: 7em; }
+.dash .collection i {
+  margin: 0 1em; }
 
 nav {
   padding-left: 5%;
@@ -189,6 +225,13 @@ body {
       z-index: 999 !important; }
   .slider .indicators .indicator-item.active {
     background-color: #67809F; }
+
+.shit {
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .container.bio {
   text-align: center;

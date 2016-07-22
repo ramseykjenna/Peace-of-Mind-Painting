@@ -1,0 +1,31 @@
+<div class="dash container">
+   <div class="row">
+       <ul class="collection with-header col s6">
+        <li class="collection-header"><h4>Interior Images:</h4></li>
+        <li class="collection-item" ng-repeat="photo in photosArray | filter:{type: 'interior'}"><div>{{photo.imagePath}}{{photo.order}}<span class="badge">{{photo.type}}</span><a href="" class="secondary-content"><i class="ion-chevron-up" ng-click="photo.order = photo.order + 1"></i><i class="ion-chevron-down" ng-click="photo.order = photo.order - 1"></i></a></div></li>
+      </ul>
+      <ul class="collection with-header col s6">
+        <li class="collection-header"><h4>Exterior Images:</h4></li>
+        <li class="collection-item" ng-repeat="photo in photosArray | filter:{type: 'exterior'} | orderBy:'-order'"><div>{{photo.imagePath}}{{photo.order}}<span class="badge">{{photo.type}}</span><a href="" class="secondary-content"><i class="ion-chevron-up" ng-click="photo.order = photo.order + 1"></i><i class="ion-chevron-down" ng-click="photo.order = photo.order - 1"></i></a></div></li>
+      </ul>
+   </div>
+
+    <div class="row">
+        <form>
+            <input type="text" ng-model="image.imagePath" class="col s12">
+            <br>
+            <select class="browser-default col s12" ng-model="image.type">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="interior">Interior</option>
+                <option value="exterior">Exterior</option>
+            </select>
+            <br>
+            <button ng-click="saveImage()">Submit</button>
+        </form>
+
+
+
+
+    </div>
+
+</div>
