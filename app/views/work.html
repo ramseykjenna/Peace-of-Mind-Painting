@@ -14,10 +14,10 @@
         </ul>
     </div>
 
-   <h2>Interior</h2>
+   <h2 ng-show="loaded">Interior</h2>
 
     <!-- Interior Grid dont touch -->
-    <div gridster="gridsterOpts">
+    <div gridster="gridsterOpts" class="interior-grid">
         <ul>
             <li gridster-item="photo" ng-repeat="photo in photosArray" class="card">
                 <img class="materialboxed photo" ng-src="{{photo.photoPath}}">
@@ -25,7 +25,7 @@
         </ul>
     </div>
 
-    <h2>Exterior</h2>
+    <h2 ng-show="loadedExt">Exterior</h2>
 
     <!-- Only shown while editing -->
     <div ng-if="editing">
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Exterior Grid dont touch -->
-    <div gridster="gridsterOpts">
+    <div gridster="gridsterOptsExt">
         <ul>
             <li gridster-item="photo" ng-repeat="photo in photosExtArray" class="card">
                 <img class="materialboxed photo" ng-src="{{photo.photoPath}}">

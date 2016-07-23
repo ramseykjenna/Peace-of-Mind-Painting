@@ -18,7 +18,7 @@ angular.module('pompApp')
     $scope.editing = false;
 
      // To Rearrange and Resize Tiles
-    $scope.canDragResize = true;
+    $scope.canDragResize = false;
 
 
 
@@ -65,7 +65,7 @@ angular.module('pompApp')
     var ref = new Firebase("https://pomp-9a862.firebaseio.com/photosExt");
     $scope.photosExtArray = $firebaseArray(ref);
     $scope.photosExtArray.$loaded(function () {
-        $scope.Extloaded = true;
+        $scope.loadedExt = true;
         $scope.loadingItems++;
     });
 
@@ -82,6 +82,22 @@ angular.module('pompApp')
             enabled: $scope.canDragResize, // whether dragging items is supported
             stop: function (event, $element, widget) {
                     $scope.save();
+                } // optional callback fired when item is finished dragging
+        }
+    };
+
+    $scope.gridsterOptsExt = {
+        columns: 12,
+        resizable: {
+            enabled: $scope.canDragResize,
+            stop: function (event, $element, widget) {
+                    $scope.saveExt();
+                } // optional callback fired when item is finished resizing
+        },
+        draggable: {
+            enabled: $scope.canDragResize, // whether dragging items is supported
+            stop: function (event, $element, widget) {
+                    $scope.saveExt();
                 } // optional callback fired when item is finished dragging
         }
     };

@@ -1,6 +1,9 @@
 .gridster-item {
   z-index: auto; }
 
+.interior-grid {
+  margin-bottom: 8em; }
+
 .work {
   min-height: 100vh;
   text-align: center;
