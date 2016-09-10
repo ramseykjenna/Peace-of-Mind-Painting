@@ -140,6 +140,7 @@ body {
 footer {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
     background-color: $primary;
     input:focus {
         border-bottom: 1px solid white !important;
